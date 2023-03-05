@@ -1,15 +1,9 @@
-def fibonacci(numero):
-    a, b = 0, 1
-    while b < numero:
-        a, b = b, a + b
-    if b == numero:
-        return True
-    else:
-        return False
+indice = 13
+soma = 0
+K = 0
 
-Ninformado = int(input("Digite um número: "))
+while K < indice:
+    K += 1
+    soma += K
 
-if fibonacci(Ninformado):
-    print("O número informado pertence à sequência de Fibonacci.")
-else:
-    print("O número informado NÃO pertence à sequência de Fibonacci.")
+print(f"O resultado da soma é: {soma}")
